@@ -1,6 +1,7 @@
-body {
-    background-color: red;;
+*{
+    font-family: 'Montserrat', sans-serif;
 }
-h1 {
-    color: blue;
+
+body {
+    background-color: #ccc;;
 }
