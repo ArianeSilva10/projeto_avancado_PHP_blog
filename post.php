@@ -39,22 +39,22 @@
             Commodi voluptas magni vitae aliquid, voluptates dolores illum reprehenderit fugit nam, consectetur, fuga laudantium provident sint perspiciatis minima facilis similique dicta dolorum iusto dolorem enim? Rerum harum corporis nisi! Ratione.
             Alias cupiditate voluptate tempore soluta, neque natus temporibus sit ducimus vitae accusamus sapiente excepturi. Ipsa animi omnis nisi ab sapiente, reprehenderit iusto recusandae magni sed facere voluptatem voluptates laborum minus?
         </div>
+        <aside id="nav-container">
+            <h3 id="tags-title">Tags</h3>
+            <ul id="tag-list">
+                <?php foreach($currentPost['tags'] as $tag): ?>
+                    <li><a href="#"><?= $tag ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+    
+            <h3 id="categories-title">Categorias</h3>
+            <ul id="categories-list">
+                <?php foreach($categories as $category): ?>
+                    <li><a href="#"><?= $category ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </aside>
     </main>
-    <aside id="nav-container">
-        <h3 id="tags-title">Tags</h3>
-        <ul id="tag-list">
-            <?php foreach($currentPost['tags'] as $tag): ?>
-                <li><a href="#"><?= $tag ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-
-        <h3 id="categories-title">Categorias</h3>
-        <ul id="categories-list">
-            <?php foreach($categories as $category): ?>
-                <li><a href="#"><?= $category ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-    </aside>
 <?php
     include_once('./templates/footer.php');
 ?>
